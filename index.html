@@ -4,68 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-
-        .login-container h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <svg height="130" width="200">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="10%" stop-color="#F6B092" />
+                  <stop offset="100%" stop-color="#87CDEE" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="100" cy="70" rx="65" ry="45" fill="url(#grad1)" />
+              <text fill="#000000" font-size="45" font-family="Verdana" x="50" y="86">AWA</text>
+            </svg>
+            <h1>A WEEK AWAY</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="mp3.html">Playlist</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Login Form</h2>
         <form id="loginForm">
             <div class="form-group">
                 <label for="username">Username</label>
@@ -77,10 +43,9 @@
             </div>
             <button type="button" onclick="validateLogin()">Login</button>
             <br><br>
-        <input type="checkbox" id="check">
-        <span>Remember me</span>
-        
-        <a href="#">Create an account</a>
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember me</label>
+            <a href="#">Create an account</a>
         </form>
     </div>
 
@@ -90,9 +55,9 @@
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
-            if (username === "Zybelle" && password === "password") {
+            if (username && password) {
 
-                window.location.href = "/mp3.html";
+                window.location.href = "mp3.html";
             } else {
 
                 alert("Invalid username or password");
