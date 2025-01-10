@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Musical Shows OST's-Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg height="130" width="200">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="10%" stop-color="#F6B092" />
+                  <stop offset="100%" stop-color="#87CDEE" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="100" cy="70" rx="65" ry="45" fill="url(#grad1)" />
+              <text fill="#000000" font-size="45" font-family="Verdana" x="50" y="86">AWA</text>
+            </svg>
+            <h1>FAVORITE MUSICAL SHOWS OST'S</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" onclick="validateLogin()">Login</button>
+            <br><br>
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember me</label>
+            <a href="#">Create an account</a>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username && password) {
+
+                window.location.href = "mp3.html";
+            } else {
+
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+</body>
+</html>
