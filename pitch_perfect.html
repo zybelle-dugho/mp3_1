@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Musical Shows OST's-Album-Pitch Perfect</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('images/PITCH PERFECT O_S.T. - Walmart.com.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox for container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.mp3-player {
+    width: 80%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add spacing between players */
+    display: flex; /* Enable flexbox for mp3-player */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+
+.mp3-player h2 {
+    background-color: darkturquoise;
+    font-family: verdana;
+    text-align: center; /* Center the h2 text */
+    width: 100%; /* Make h2 take full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.mp3-player audio {
+    width: 100%; /* Make audio player take full width */
+    margin-bottom: 10px;
+}
+
+.mp3-player p {
+    color: blue;
+    font-family: courier;
+    text-align: center; /* Center the paragraph text */
+}
+
+.navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation button {
+    margin: 0 10px; /* Add spacing between buttons */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo">
+            <svg height="130" width="200">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="10%" stop-color="#F6B092" />
+                  <stop offset="100%" stop-color="#87CDEE" />
+                </linearGradient>
+              </defs>
+              <ellipse cx="100" cy="70" rx="65" ry="45" fill="url(#grad1)" />
+              <text fill="#000000" font-size="45" font-family="Verdana" x="50" y="86">AWA</text>
+            </svg>
+            <h1>PITCH PERFECT-PLAYLIST</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                <li><a href="mp3.html">Playlist</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="mp3-player">
+            <h2 style="background-color: darkturquoise; font-family:  verdana;">Party in the USA</h2>
+            <audio controls>
+                <source src="music/pitch-perfect_pitch-perfect-party-in-the-u-s-a.mp3" type="audio/mpeg">
+            </audio>
+            <p style="color: blue; font-family: courier;"><b>Movie:</b><i>Pitch Perfect</i><br><b>Artists:</b> <i>The Barden Bellas</i><br><b>Released:</b><i> 2012</i></p>
+        </div>
+        
+        <div class="mp3-player">
+            <h2 style="background-color: darkturquoise; font-family:  verdana;">Pool Mushup (Just The Way You Are / Just A Dream)</h2>
+            <audio controls>
+                <source src="music/Pool Mashup_ Just The Way You Are_Just A Dream [yqZa0soNpjw].mp3">
+            </audio>
+            <p style="color: blue; font-family: courier;"><b>Movie:</b><i>Pitch Perfect</i><br><b>Artists:</b> <i>The Barden Bellas</i><br><b>Released:</b><i> 2012</i></p>
+        </div>
+        
+        <div class="mp3-player">
+            <h2 style="background-color: darkturquoise; font-family:  verdana;">Rip Off </h2>
+            <audio controls>
+                <source src="music/pitch-perfect_pitch-perfect-riff-off.mp3">
+            </audio>
+            <p style="color: blue; font-family: courier;"><b>Movie:</b><i>Pitch Perfect 2</i><br><b>Artists:</b> <i>The Barden Bellas, The Bu Harmonics, Soldiers, Evermoist, Saddle Up, , and Young Sparrow and DJ Dragon Nutz</i><br><b>Released:</b><i> 201</i></p>
+        </div>
+    </div>
+    
+    <div class="navigation">
+        <button id="backButton" onclick="goToPreviousAlbum()">ALBUM</button>
+        <button id="nextButton" onclick="goToNextAlbum()">A Week Away</button>
+    </div>
+
+    <script>
+        function goToPreviousAlbum() {
+            // Replace 'previous_album.html' with the actual path
+            window.location.href = 'album.html'; 
+        }
+
+        function goToNextAlbum() {
+            // Replace 'next_album.html' with the actual path
+            window.location.href = 'a_week_away.html'; 
+        }
+    </script>
+</body>
+</html>
