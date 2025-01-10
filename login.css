@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Removed background-color, we'll use a background image instead */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    background-image: url('images/IMG_20250110_000109.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+header {
+    background-color: #fff; /* Added background color for better visual separation */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute logo and nav evenly */
+    align-items: center; /* Vertically align logo and nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo svg {
+    margin-right: 10px; /* Added margin between logo and text */
+}
+
+.logo h1 {
+    font-size: 3.5em; /* Increased font size for better readability */
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Added margin for spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Changed color for better contrast */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rememberMe {
+  margin-right: 5px;
+}
